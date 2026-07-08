@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "nombre": "Bruma Facial",
+    "precio": 30000,
+    "categoria": "Hidratantes",
+    "descripcion": "Un rocío ultrafino que refresca y calma al instante. Ideal para hidratar la piel en cualquier momento del día y fijar el maquillaje con un acabado luminoso.",
+    "imagen": "./img/bruma_facial.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Crema Hidratante",
+    "precio": 24550,
+    "categoria": "Hidratantes",
+    "descripcion": "Nutrición intensiva en un tarro artesanal. Sella la humedad, repara la barrera cutánea y protege tu piel durante todo el día dejándola suave y elástica.",
+    "imagen": "./img/jokko_hidratante.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Mascarilla de Arcilla",
+    "precio": 18900,
+    "categoria": "Mascarillas",
+    "descripcion": "Purificación profunda que respeta tu rostro. Absorbe el exceso de sebo y minimiza los poros sin resecar, enriquecida con extractos botánicos calmantes.",
+    "imagen": "./img/mascarilla_arcilla.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Mascarilla Hidratante",
+    "precio": 12000,
+    "categoria": "Mascarillas",
+    "descripcion": "Un shot de vitalidad nocturna. Diseñada para restaurar los niveles de agua de la piel mientras descansás, despertando con un rostro radiante.",
+    "imagen": "./img/mascarilla_hidratante.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Serum Vitamina C",
+    "precio": 32182,
+    "categoria": "Serums",
+    "descripcion": "Poder antioxidante para iluminar tu piel. Desvanece manchas, unifica el tono del rostro y estimula el colágeno para una apariencia joven y fresca.",
+    "imagen": "./img/serum_vitaminaC.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Serum Hidratación Intensa",
+    "precio": 30000,
+    "categoria": "Serums",
+    "descripcion": "Un shot de frescura profunda. Formulado con extracto de bambú y ceramidas, penetra las capas de la piel para restaurar su brillo natural.",
+    "imagen": "./img/jokko_serum.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Espuma Limpiadora",
+    "precio": 23115,
+    "categoria": "Limpiadores",
+    "descripcion": "Textura sedosa que remueve con delicadeza las impurezas. Enriquecida con té verde y arroz que equilibran y calman el rostro en tu rutina diaria.",
+    "imagen": "./img/jokko_espuma.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Agua Micelar",
+    "precio": 17512,
+    "categoria": "Limpiadores",
+    "descripcion": "Remueve el maquillaje y las impurezas en un solo paso. Una fórmula suave y ligera que limpia profundamente sin dejar residuos grasos.",
+    "imagen": "./img/agua_micelar.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Contorno de Ojos Revitalizador",
+    "precio": 16700,
+    "categoria": "Contorno de Ojos",
+    "descripcion": "El secreto para una mirada descansada. Combina cafeína y ácido hialurónico para descongestionar bolsas y suavizar líneas de expresión.",
+    "imagen": "./img/jokko_contorno.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Protector Solar SPF 50+",
+    "precio": 41000,
+    "categoria": "Protección Solar",
+    "descripcion": "Máxima protección con acabado invisible. Escudo avanzado contra los rayos UV que aporta un efecto hidratante gracias a la centella asiática.",
+    "imagen": "./img/jokko_solar.png"
+  },
+  {
+    "id": 11,
+    "nombre": "Bálsamo Labial",
+    "precio": 21235,
+    "categoria": "Labiales",
+    "descripcion": "Reparación y suavidad extrema para tus labios. Crea una capa protectora contra el resecamiento, aportando un brillo sutil y natural.",
+    "imagen": "./img/balsamo.png"
+  }
+]

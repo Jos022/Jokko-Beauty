@@ -3,125 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./imagenes/JB-1.png">
-    <title>Jokko Beauty</title>
+    <link rel="icon" type="image/png" href="./img/JB-1.png">
+    <title>Jokko Beauty | Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header> 
-    <nav class="Menu-navegacion"> 
-        <img src="./imagenes/JB-1.png" alt="Jokko Beauty Logo">
-    <ul class="nav-list">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Carrito</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-</nav>
-</header>
+        <nav class="Menu-navegacion"> 
+            <a href="index.html">
+            <img src="./img/JB-1.png" alt="Jokko Beauty Logo">
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html" class="carrito-link">
+        🛒 <span id="contador-carrito-nav" class="contador-badge">0</span>
+    </a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section>
-        <video width="640" height="360" controls autoplay muted >
-            <source src="./imagenes/JB.mp4">
-        </video>
+        <section style="text-align: center; padding: 60px 20px; background-color: var(--color-pastel-fondo); border-radius: var(--border-radius-cute); margin-bottom: 40px;">
+            <h1 style="font-size: 32px; margin-bottom: 15px; color: #ff5c8a;">Un mimo diario para tu piel</h1>
+            <p style="color: var(--color-secundario); max-width: 600px; margin: 0 auto 25px auto; font-size: 16px;">
+                Te ayudamos a conectar con tu belleza natural a través de nuestras fórmulas seleccionadas con amor. Diseñá un ritual de cuidado suave, consciente y libre de complicaciones.
+            </p>
+            <a href="productos.html" class="btn-principal" style="display: inline-block; width: auto; padding: 12px 35px;">Comenzá tu rutina</a>
         </section>
-<section class="Productos container">
-    <h2>Nuestros productos</h2>
+<!-- Secciones Destacadas (3 Productos Elegidos) -->
+    <h2 style="text-align: center; margin-bottom: 30px; font-size: 24px;">Productos Destacados</h2>
+    <section class="productos-grid" style="margin-bottom: 40px;" id="contenedor-destacados">
 
-    <article class="Card productos">
-<img src="./imagenes/jokko_serum.png" alt="Serum">
-<h3>Serum hidratante</h3>
-<p class="Descripcion">Un shot de frescura e hidratación profunda. Formulado con extracto puro de bambú y ceramidas, este sérum ligero penetra en las capas de la piel para restaurar su brillo natural, dejándola suave, elástica y radiante desde la primera aplicación.</p>
-<div class="precio">$70.000</div>
-<button class="btn-buy">Añadir al carrito</button>
-    </article>
+        <article class="Card">
+            <img src="./img/jokko_espuma.png" alt="Limpiador Espumoso">
+            <h3>Espuma Limpiadora</h3>
+            <p class="Descripcion">Textura sedosa que remueve con delicadeza las impurezas. Enriquecida con té verde y arroz que equilibran y calman el rostro en tu rutina diaria.</p>
+            <p class="precio">$23.115</p>
+            <button class="btn-buy" data-id="1">Agregar al carrito</button>
+        </article>
 
-    <article class="Card productos">
-    <img src="./imagenes/jokko_contorno.png" alt="otro producto">
-    <h3>Contorno de ojos</h3>
-    <p class="Descripcion">El secreto para una mirada descansada y luminosa. Diseñado en un práctico tubo aplicador de alta precisión, este contorno de ojos ligero combina cafeína y ácido hialurónico para descongestionar bolsas, suavizar líneas de expresión y revitalizar la delicada zona de la mirada.</p>
-    <div class="precio">$66.625</div>
-    <button class="btn-buy">añadir al carrito</button>
+        <article class="Card">
+            <img src="./img/serum_vitaminaC.png" alt="Serum Iluminador de Vitamina C">
+            <h3>Serum Vitamina C</h3>
+            <p class="Descripcion">Poder antioxidante para iluminar tu piel. Desvanece manchas, unifica el tono del rostro y estimula el colágeno para una apariencia joven y fresca.</p>
+            <p class="precio">$32.182</p>
+            <button class="btn-buy" data-id="2">Agregar al carrito</button>
+        </article>
 
-    </article>
-<article class="Card productos">
-    <img src="./imagenes/jokko_espuma.png" alt="otro producto">
-    <h3>Espuma limpiadora</h3>
-    <p class="Descripcion">Una limpieza pura que respeta tu piel. Su textura sedosa remueve con delicadeza las impurezas y el exceso de sebo sin resecar. Enriquecida con agua de té verde, arroz y aminoácidos que calman y equilibran el rostro en tu rutina diaria.</p>
-    <div class="precio">$58.500</div>
-    <button class="btn-buy">añadir al carrito</button>
-    </article>
-    <article class="Card productos">
-    <img src="./imagenes/jokko_hidratante.png" alt="otro producto">
-    <h3>Crema hidratante</h3>
-    <p class="Descripcion">Nutrición intensiva y confort absoluto en un tarro artesanal de bambú. Esta crema rica combina agua de bambú, extracto de perlas y un triple complejo de ácido hialurónico para sellar la humedad, reparar la barrera cutánea y proteger tu piel durante todo el día.</p>
-    <div class="precio">$42.687 </div>
-    <button class="btn-buy">añadir al carrito</button>
+        <article class="Card">
+            <img src="./img/jokko_hidratante.png" alt="Crema Hidratante de Centella Asiatica">
+            <h3>Crema Hidratante</h3>
+            <p class="Descripcion">Nutrición intensiva en un tarro artesanal. Sella la humedad, repara la barrera cutánea y protege tu piel durante todo el día dejándola suave y elástica.</p>
+            <p class="precio">$24.550</p>
+            <button class="btn-buy" data-id="3">Agregar al carrito</button>
+        </article>
 
-    </article>
-    <article class="Card productos">
-    <img src="./imagenes/jokko_solar.png" alt="otro producto">
-    <h3>Protector solar</h3>
-    <p class="Descripcion">Máxima protección con un acabado invisible y sedoso. Este protector solar SPF50+ ofrece un escudo avanzado contra los rayos UV mientras aporta un efecto tonificante e hidratante gracias a la centella asiática y el agua de té verde. No deja residuo graso.</p>
-    <div class="precio">$73.632</div>
-    <button class="btn-buy">añadir al carrito</button>
-    </article>
-</section>
-<section class="reseñas">
-    <h2>Opiniones de nuestros clientes</h2>
-    <div class="reseñas-grid">
-    <section class="card">
-        <h3>Josefina</h3>
-        <p>Me encantó la crema hidratante, la textura es muy fluida</p>
     </section>
-        <section class="card">
-        <h3>Mimi</h3>
-        <p>Me sirvió mucho el protector solar, ideal para llevarlo a todos lados</p>
-    </section>
-        <section class="card">
-        <h3>Daniela</h3>
-        <p>El contorno de ojos es un producto muy bueno, ya es la segunda vez que lo compro y me dio muy buenos resultados</p>
-    </section>
-    </div>
-</section>
+        <h2 style="text-align: center; margin-top: 50px; margin-bottom: 30px; font-size: 24px;">Lo que dicen nuestras clientas </h2>
+        <section class="resenas-grid" style="margin-bottom: 20px;">
+            
+            <article class="resena-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="resena-texto">"Los limpiadores son súper suaves con mi piel sensible. El paquete llegó rápido y con una presentación hermosa. ¡Amo Jokko Beauty!"</p>
+                <h4 class="resena-autor">— Sofía R.</h4>
+            </article>
 
-<section class="contacto">
+            <article class="resena-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="resena-texto">"Es la segunda vez que compro el serum iluminador. Te deja la piel radiante y con ese efecto glow que buscaba."</p>
+                <h4 class="resena-autor">— Camila.</h4>
+            </article>
 
-<h2>Contacto</h2>
-<form action="https://formspree.io/f/xbdbozvy" method="POST" class="formulario-contacto">
-<label for="nombre">Nombre:</label> <br>
-<input type="text" id="nombre" name="nombre" required>
-<br>
-<label for="email">Correo eletronico:</label> <br>
-<input type="email" id="email" name="email" required>
-<br>
-<label for="textarea"> tu mensaje: </label> <br>
-<textarea name="textarea" id="textarea" placeholder="Escribe tu mensaje:"></textarea>
-<br>
-    <input type="submit" value="Enviar">
-</label>
-</form>
-</section>
+            <article class="resena-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="resena-texto">"Me encantó la atención personalizada por WhatsApp para armar mi rutina de skincare. Los productos son un 10."</p>
+                <h4 class="resena-autor">— Valen M.</h4>
+            </article>
 
-<footer>
-    <h3>Medios de pago</h3>
-    <div class="logos-pago">
-<img src="./imagenes/efectivo.png" alt="efectivo">
-<img src="./imagenes/tranferencia.png" alt="transferencia">
-<img src="./imagenes/mastercard.png" alt="master">
-<img src="./imagenes/masterdebito.png" alt="masterdeb">
-<img src="./imagenes/visa.png" alt="visa">
-<img src="./imagenes/visadebito.png" alt="visadeb">
-    </div>
-    <h3>Nuestras redes</h3>
-    <a href="https://www.instagram.com/">Instagram</a>
-    <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
-<br> <br>
-<p>(©)2026 Jokko Beauty. Todos los derechos reservados.</p>
-</footer>
+        </section>
     </main>
+    
+
+    <footer>
+        <h3>Medios de pago</h3>
+        <div class="logos-pago">
+            <img src="./img/efectivo.png" alt="efectivo">
+            <img src="./img/tranferencia.png" alt="transferencia">
+            <img src="./img/mastercard.png" alt="master">
+            <img src="./img/masterdebito.png" alt="masterdeb">
+            <img src="./img/visa.png" alt="visa">
+            <img src="./img/visadebito.png" alt="visadeb">
+        </div>
+        <h3>Nuestras redes</h3>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank">Facebook</a>
+        <br> <br>
+        <p>© 2026 Jokko Beauty. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/storage.js"></script>
+    <script src="./js/productos.js"></script>
 </body>
 </html>

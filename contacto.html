@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/JB-1.png">
+    <title>Jokko Beauty | Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header> 
+        <nav class="Menu-navegacion"> 
+            <a href="index.html">
+            <img src="/img/JB-1.png" alt="Jokko Beauty Logo">
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html" class="carrito-link">
+        🛒 <span id="contador-carrito-nav" class="contador-badge">0</span>
+    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h2>Contactate con nosotros</h2>
+    <form action="https://formspree.io/f/xbdbozvy" method="POST" class="formulario-contacto">
+<label for="nombre">Nombre:</label> <br>
+<input type="text" id="nombre" name="nombre" required>
+<br>
+<label for="email">Correo eletronico:</label> <br>
+<input type="email" id="email" name="email" required>
+<br>
+<label for="textarea">Tu mensaje:</label> <br>
+<textarea name="mensaje" id="textarea" placeholder="Escribe tu mensaje:"></textarea>
+<br>
+    <input type="submit" value="Enviar">
+</form>
+    </main>
+    <footer>
+        <h3>Medios de pago</h3>
+        <div class="logos-pago">
+               <img src="./img/efectivo.png" alt="efectivo">
+            <img src="./img/tranferencia.png" alt="transferencia">
+            <img src="./img/mastercard.png" alt="master">
+            <img src="./img/masterdebito.png" alt="masterdeb">
+            <img src="./img/visa.png" alt="visa">
+            <img src="./img/visadebito.png" alt="visadeb">
+        </div>
+        <h3>Nuestras redes</h3>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank">Facebook</a>
+        <br> <br>
+        <p>© 2026 Jokko Beauty. Todos los derechos reservados.</p>
+    </footer>
+
+<script src="./js/storage.js"></script>
+<script src="./js/contacto.js"></script>
+</body>
+</html>
