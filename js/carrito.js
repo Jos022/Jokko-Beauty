@@ -95,7 +95,7 @@ btnVaciar.addEventListener('click', () => {
     limpiarCarritoStorage();
     actualizarContadorHeader();
     renderizarCarrito();
-    mostrarNotificacion('¡Vaciaste tu carrito de compras! 🌸');
+    mostrarNotificacion('¡Vaciaste tu carrito de compras!');
 });
 
 btnComprar.addEventListener('click', () => {

@@ -74,7 +74,7 @@ function configurarEventosSeccion(contenedor, productos) {
             carrito.push({ ...productoSeleccionado, cantidad: 1 });
             guardarCarritoStorage(carrito);
             actualizarContadorHeader();
-            mostrarNotificacion(`¡Agregaste ${productoSeleccionado.nombre} al carrito! 🌸`);
+            mostrarNotificacion(`¡Agregaste ${productoSeleccionado.nombre} al carrito! `);
             renderizarSeccion(contenedor, productos);
         } 
         else if (e.target.classList.contains('sumar-cat')) {
